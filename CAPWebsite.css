@@ -1,0 +1,43 @@
+.jumbotron{
+	background-image: url("image1.png");
+	background-size: cover;
+	height: 760px;
+	background-position: -70px; 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar{
+	background-color: #580000;
+	color: white;
+	height: 70px;
+	font-size: 20px;
+}
+
+.welcome{
+	margin-top: 100px;
+	margin-bottom: 120px;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.welcome,h1{
+	text-align: center;
+}
+
+.virtues{
+	background-color: #000B19;
+	color: white;
+	padding-left: 100px;
+	padding-top: 100px;
+	padding-bottom: 120px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+
+
+a:link{
+	color: white;
+}
+
