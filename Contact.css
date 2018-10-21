@@ -1,0 +1,33 @@
+html { 
+	background: url(marble.jpg) no-repeat center center fixed;
+	background-image: url(marble.jpg); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+
+#siteheader{
+	padding: 25px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+div.a{
+	font-family: 'Lato', sans-serif;
+	font-size: 125%;
+}
+
+div.b{
+	font: 400 100px/1.3 'Indie Flower', cursive;
+	font-size: 350%; 
+	text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+	color: #BF1111;
+}
+
+div.c{
+	font-family: 'Dancing Script', cursive;
+	font-size: 150%;
+}
+
+
+
