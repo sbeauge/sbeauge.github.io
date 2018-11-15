@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<!-- Google Fonts API-->
-		<link href="http://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 		<!-- jQuery library -->
@@ -18,8 +18,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-	
-		<div class="container" id="siteheader">
+		<div class="container-fluid" id="siteheader">
 			<div class="row">
 				<div class="col-lg-3">
 					<img src="pics/logo.png" alt="DPO logo" height="150px" width="150px"> 
@@ -29,15 +28,17 @@
 					<div class="b">PREVAILING PSI CHAPTER</div>
 					<div class="c">University of Central Florida</div>
 				</div>
+				<div class="col-lg-2"></div>
 			</div>
+			
 			<div class="row-fluid">
-				<nav class="navbar navbar-expand-lg">
+				<nav class="navbar navbar-expand-lg" style="width:100%">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="/html/Sisters.html">Sisters</a>
+							<a class="nav-link" href="html/Sisters.html">Sisters</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="html/Phil.html">Philanthropy</a>
@@ -57,34 +58,51 @@
 		</div>
 		
 		<!--- insert carousel code---->
-		<div id="maincarousel" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#maincarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#maincarousel" data-slide-to="1"></li>
-				<li data-target="#maincarousel" data-slide-to="2"></li>
-			</ol>
-			
-			<div class="carousel-inner" style="width:100%; height: 800px; !important;">
-				<div class="carousel-item active">
-					<img class="d-block w-100" src="pics/image1.png" alt="First slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="pics/carousel3.jpg" alt="Second slide">
-				</div>
-				<div class="carousel-item">
-					<img class="d-block w-100" src="pics/carousel4.jpg" alt="Third slide">
-				</div>
+		<div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+			<div class="row-fluid">
+				<div id="maincarousel" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#maincarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#maincarousel" data-slide-to="1"></li>
+						<li data-target="#maincarousel" data-slide-to="2"></li>
+						<li data-target="#maincarousel" data-slide-to="3"></li>
+						<li data-target="#maincarousel" data-slide-to="4"></li>
+					</ol>
+					
+					<div class="carousel-inner" style="width:100%; height: 800px; !important;">
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="pics/image1.png" alt="First slide">
+							<div class="carousel-caption">SISTERHOOD</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="pics/carousel3.jpg" alt="Second slide">
+							<div class="carousel-caption">HONESTY</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="pics/carousel4.jpg" alt="Third slide">
+							<div class="carousel-caption">LOYALTY</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="pics/carousel5.jpg" alt="Fourth slide">
+							<div class="carousel-caption">FRIENDSHIP</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="pics/carousel6.jpg" alt="Fifth slide">
+							<div class="carousel-caption">RESPECT</div>
+						</div>
 
+					</div>
+					
+					<a class="carousel-control-prev" href="#maincarousel" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#maincarousel" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
 			</div>
-			
-			<a class="carousel-control-prev" href="#maincarousel" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#maincarousel" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
 		</div>
 		
 		
@@ -147,9 +165,9 @@
 		
 		<div class="container" id="eboard">
 			<div class="row">
-				<div class="col-sm-2"></div>
-					<div class="col-sm-6"><img src="pics/eboard.PNG"></div>
-				<div class="col-sm-3 "></div>
+				<div class="col-sm-1"></div>
+					<div class="col-sm-8"><img class="center-block" src="pics/eboard.PNG"></div>
+				<div class="col-sm-3"></div>
 			</div>
 		</div>
 		
@@ -164,7 +182,7 @@
 					<p>The Prevailing Psi Chapter of Delta Phi Omega Sorority, Inc., has been active on the campus since September 7, 2012.</p>
 				</div>
 				<div class="col-sm-1"></div>
-				<div class="col-sm-3">
+				<div class="col-sm-3" style=" padding-top: 50px;">
 					<div class="c" style="font-size: 250%; color: #B53737;">University of Central Florida Founding Mothers​</div>
 					<br>
 					<p class="foundingnames">Parminder Kaur</p>
@@ -174,7 +192,6 @@
 				</div>
 				<div class="col-sm-2"></div>
 			</div>
-			<br>
 			<br>
 			<div class="row">
 				<div class="col-sm-2"></div>
@@ -189,6 +206,71 @@
 			</div>
 		</div>
 		
+		<div class="container-fluid" id="quickfacts">
+			<div class="row c center-block">
+				<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<h3 class="c center-block" style="font-size: 325%; color: #B53737; text-align: center;">Quick Facts</h3>
+					</div>
+				<div class="col-md-4"></div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="foundingnames">
+						<div class="c" style="font-size: 250%; color: #B53737; text-align: center; padding-top: 25px;">PURPOSE:</div>
+						<p>“The purpose of Delta Phi Omega shall be to foster unity among South Asian women, build community awareness, and gain a greater understanding of oneself and others. The sorority aspires to instill leadership traits, excel in all academic endeavors, to encourage an active relationship between the sorority and its respective university, and shall do so with the utmost compassion, dignity, and fortitude.”</p>
+					</div>
+				</div>	
+				<div class="col-sm-4">
+					<img src="pics/fullsize logo.png">
+				</div>
+				<div class="col-sm-4">
+					<div class="foundingnames">
+						<div class="c" style="font-size: 250%; color: #B53737; text-align: center; padding-top: 25px;">QUOTE:</div>
+						<p>"Sincerity of conviction and purity of motive will surely gain the day, and even a small minority, armed with these, is Destined to Prevail against all Odds." <br/>- Swami Vivekananda</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid" id="aboutus" style="padding-bottom: 50px; !important;">
+			<div class="row">
+
+				<div class="col-sm-2"></div>
+				
+				<div class="col-sm-2">
+					<h4 class="c">FOUNDED</h4>
+					<p class="facttext">December 6, 1998 <br/> at the University of Houston</p>
+				</div>
+				
+				<div class="col-sm-2">
+					<h4 class="c">MOTTO</h4>
+					<p class="facttext">We Dreamt, We Saw, <br/>We Conquered</p>
+				</div>
+				
+				<div class="col-sm-2">
+					<h4 class="c">NETWORK</h4>
+					<p class="facttext">50 Affiliated Schools <br/> Over 2,400 sisters nationwide!</p>
+				</div>
+				
+				<div class="col-sm-2">
+					<h4 class="c">COLORS</h4>
+					<p class="facttext">Red, Black, <br/> and Silver</p>
+				</div>
+				
+				<div class="col-sm-2"></div>
+				
+			</div>
+			
+			<div class="container" id="eboard">
+				<div class="row">
+					<div class="col-sm-1"></div>
+						<div class="col-sm-8"><img class="center-block" src="pics/quickfacts.PNG"></div>
+					<div class="col-sm-3"></div>
+				</div>
+			</div>		
+		</div>
+
 	</body>
 	
 	<!-- Footer -->

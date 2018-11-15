@@ -1,72 +1,99 @@
-#siteheader{
-	padding: 25px;
-	padding-bottom: 50px;
+#siteheader
+{
+	padding-top: 25px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
 	text-align: center;
 }
-nav .navbar-nav li a{
-  color: black !important;
+nav .navbar-nav li a
+{
+	color: black !important;
 }
 
-nav .navbar-nav li a:visited{
-  color: white !important;
+nav .navbar-nav li a:visited
+{
+	color: white !important;
 }
 
-nav .navbar-nav li a:active{
-  color: red !important;
+nav .navbar-nav li a:active
+{
+	color: red !important;
 }
 
-.navbar-nav > li{
-  padding-left:30px;
-  padding-right:30px;
+.navbar
+{
+	background-color: #BF1111;
+	color: white;
+	height: 100px;
+	font-size: 25px;
 }
 
-body { 
+.navbar-nav 
+{
+	float: left;
+	margin: 0;
+	width: 100%;
+}
+
+.navbar-nav > li
+{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left:30px;
+	padding-right:30px;
+	width: 17%;
+	text-align: center;
+}
+
+body 
+{ 
 	background: url(../pics/marble.jpg) no-repeat center fixed;
 	background-image: url(../pics/marble.jpg); 
 	background-size: cover;
 }
 
-div.a{
+div.a
+{
 	font-family: 'Lato', sans-serif;
 	font-size: 125%;
 }
 
-div.b{
+div.b
+{
 	font: 400 100px/1.3 'Indie Flower', cursive;
 	font-size: 350%; 
 	text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 	color: #BF1111;
 }
 
-div.c{
+div.c
+{
 	font-family: 'Dancing Script', cursive;
 	font-size: 150%;
 }
 
-.navbar{
-	background-color: #BF1111;
-	color: white;
-	height: 70px;
-	font-size: 20px;
-	
-}
-
-.welcome{
+.welcome
+{
 	margin-top: 50px;
 	margin-bottom: 120px;
 	margin-left: 100px;
 	margin-right: 100px;  
     
 }
-.welcome.row{
+
+.welcome.row
+{
 	border: 5px solid #BF1111;
 }
 
-.welcome,h1{
+.welcome,h1
+{
 	text-align: center;
 }
 
-.virtues{
+.virtues
+{
 	background-color: #000B19;
 	color: white;
 	padding-left: 100px;
@@ -76,7 +103,8 @@ div.c{
 	text-align: center;
 }
 
-#eboard{
+#eboard
+{
 	padding-top: 0;
 }
 
@@ -84,29 +112,69 @@ a:link{
 	color: white;
 }
 
-a:visited{
+a:visited
+{
 	color: black:
 }
 
-.foundingnames{
+.foundingnames
+{
 	font-size: 150%;
 }
 
-h2{
+h2
+{
 	font-family: 'Dancing Script', cursive;
 	font-size: 150%;
 }
 
-#aboutus{
+#aboutus
+{
 	background-color: #000B19;
 	color: white;
 	padding-left: 100px;
-	padding-top: 100px;
+	padding-top: 50px;
 	padding-bottom: 120px;
 	padding-right: 100px;
 	text-align: center;
 }
 
-.fa{
+#quickfacts
+{
+	padding-top: 25px;
+	padding-left: 100px;
+	padding-bottom: 100px;
+	padding-right: 100px;
+	text-align: center;
+}
+
+h4.c
+{
+	font-family: 'Dancing Script', cursive;
+	font-size: 250%;
+	color: #B53737;
+}
+
+.carousel-caption
+{
+	font-family: 'Dancing Script', cursive;
+	position: absolute;
+	font-size: 3.5em;
+	color: #B53737;
+	text-align: center;
+	left: 100px;
+	top: 80%;
+	transform: translateY(-50%);
+	background-color: black;
+}
+
+p.facttext
+{
+	font-size: 150%;
+}
+
+
+.fa
+{
 	padding: 5px;
 }

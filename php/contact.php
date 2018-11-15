@@ -1,35 +1,28 @@
 <?php
-/*
-$action=$_REQUEST['action'];
-if ($action=="")    // display the contact form 
-    {
-    ?>
-    <form  action="" method="POST" enctype="multipart/form-data">
-    <input type="hidden" name="action" value="submit">
-    Your name:<br>
-    <input name="name" type="text" value="" size="30"/><br>
-    Your email:<br>
-    <input name="email" type="text" value="" size="30"/><br>
-    Your message:<br>
-    <textarea name="message" rows="7" cols="30"></textarea><br>
-    <input type="submit" value="Send email"/>
-    </form>
-    <?php
-    } 
-else                //
-    {
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $message=$_REQUEST['message'];
-    if (($name=="")||($email=="")||($message==""))
-        {
-		echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-	    }
-    else{		
-	    $from="From: $name<$email>\r\nReturn-path: $email";
-        $subject="Message sent using your contact form";
-		// mail("youremail@yoursite.com", $subject, $message, $from);
-		echo "Email sent!";
-	    }
-    }  
-						*/?>
+
+		$name=stripslashes($_POST["name"]);
+		$email=stripslashes($_POST["email"]);
+		$phone=stripslashes($_POST["phone"]);
+		$subject=stripslashes($_POST["subject"]);
+		$mailsubj = "From the website - ".$subject;
+		$message=stripslashes($_POST["message"]);
+		$secret="6LfszXoUAAAAABOF4j72_6_SRb3gsZ_SXxzSqSu0";
+		$response=$_POST["captcha"];
+		$recipient="sebbeauge@yahoo.com";
+		$mailBody = "From: $name\t My Email is: $email\n
+					Phone: $phone\n
+					$message\n";
+
+		$verify=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret={$secret}&response={$response}");
+		$captcha_success=json_decode($verify);
+		if ($captcha_success->success==false) {
+		  //This user was not verified by recaptcha.
+
+		}
+		else if ($captcha_success->success==true) {
+			//This user was not verified by recaptcha and the email was sent
+			mail($recipient, $mailsubj, $mailBody);
+
+		
+
+		}

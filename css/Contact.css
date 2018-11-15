@@ -35,6 +35,15 @@ div.c{
 	padding: 15px;
 }
 
+msg-error {
+  color: #c65848;
+}
+.g-recaptcha.error {
+  border: solid 2px #c64848;
+  padding: .2em;
+  width: 19em;
+}
+
 @charset "utf-8";
 /* CSS Document */
 @import url(http://weloveiconfonts.com/api/?family=entypo);
